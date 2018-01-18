@@ -1,131 +1,392 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title></title>
+<head lang="en">
+    <title>POWER-МЕНЕДЖМЕНТ ДЛЯ БИЗНЕСА</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style1.css">
-    <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css"><![endif]-->
-</head>
+    <meta name="author" content="Евгений Дейнеко">
+    <meta name="keywords" content="POWER-МЕНЕДЖМЕНТ ДЛЯ БИЗНЕСА">
+    <meta property="og:title" content="POWER-МЕНЕДЖМЕНТ ДЛЯ БИЗНЕСА" />
+    <meta property="og:description" content="БИЗНЕС-ПРАКТИКУМ ОТ ЕВГЕНИЯ ДЕЙНЕКО"/>
+    <meta property="og:url" content="http://deyneko.tv/project/power_management/index.html" />
+    <meta property="og:image" content="http://deyneko.tv/project/power_management/img/power_management.jpg" />
+    <meta name="description" content="БИЗНЕС-ПРАКТИКУМ ОТ ЕВГЕНИЯ ДЕЙНЕКО">
+    <link rel="image_src" href="http://deyneko.tv/project/power_management/img/power_management.jpg" />
+    <meta name="title" content="POWER-МЕНЕДЖМЕНТ ДЛЯ БИЗНЕСА" />
 
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
+<!--скрипт парсинга UTM меток -->
+<script src="js/parsing_utm.js" type="text/javascript"></script> 
+
+<script type="text/javascript">
+	var namekey = ['added', 'utm_source','utm_campaign','utm_content'], //Ключи какие будем парсить
+	div_class = '.ss-form-entry1'; // Куда будем выводить результат
+	input_hide = 'text'; //hidden
+                            
+	$(document).ready(function (){
+		input();
+	});
+                              
+</script>
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+            n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+                document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', '354330221390878');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=354330221390878&ev=PageView&noscript=1"
+            /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <script src="iv/js/add_table.js" type="text/javascript"></script>
+
+
+<!-- Google Analytics Content Experiment code deyneko
+<script>function utmx_section(){}function utmx(){}(function(){var
+k='102841266-7',d=document,l=d.location,c=d.cookie;
+if(l.search.indexOf('utm_expid='+k)>0)return;
+function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
+indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
+length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
+'<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
+'://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
+'&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
+valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
+'" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
+</script><script>utmx('url','A/B');</script>
+End of Google Analytics Content Experiment code -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40329094-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=eV6BW8KosdVvMGey9bw8xcBFDCpdS01VzK2osYpdjPW*Qq4q6Ss8uYga0V7HsuAC*pVYGDlCIAGUJacrgxyFkM34Hi8wPm7L1QxNBNCZrnvLWLKnTJaH5t9*R*b7Fr1giIx*qIVB1CutV4HrCCAAo49bFYOzADDoOYbT4TH9/yo-';</script>
+
+</head>
 <body>
 
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NLT4DW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NLT4DW');</script>
+<!-- End Google Tag Manager -->
 
-    <div class="b-container">
-        <div class="b-container__logo">
-            <div class="b-logo">
-                <a href="#" class="b-logo__link">TravelCity</a>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter30551802 = new Ya.Metrika({
+                    id:30551802,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/30551802" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<a name="id1"></a>
+<a name="id2"></a>
+<a name="id3"></a>
+<a name="id4"></a>
+<a name="id5"></a>
+<a name="id6"></a>
+<a name="id7"></a>
+<a name="id8"></a>
+<a name="id9"></a>
+<a name="id10"></a>
+
+
+
+<div class="b-container">
+
+    <div class="b-container__header">
+        <div class="b-header content_middle">
+            <div class="b-header__title">БИЗНЕС-ПРАКТИКУМ ОТ ЕВГЕНИЯ ДЕЙНЕКО</div>
+            <div class="b-header__titleBlue">POWER-МЕНЕДЖМЕНТ ДЛЯ БИЗНЕСА</div>
+            <div class="b-header__text titleText">Примените концентрат из 20-летнего опыта в предпринимательстве.<br>
+                Благодаря этим урокам вы навсегда забудете о профессиональном выгорании,<br>
+                удвоите свою продуктивность и совершите прорыв в реализации своих идей.
             </div>
-        </div>
 
+            <div class="b-header__inform">
+                <div class="b-inform">
+                    <div class="b-inform__left">
+                        <div class="b-left">
+                            <div class="b-left__title">Вы получите:</div>
+                            <div class="b-left__list">
+                                <div class="b-list">
+                                    <!--<div class="b-list__title">УРОК 1</div>-->
+                                    <div class="b-list__text">
+                                        <img src="img/check.png" class="b-list__img" alt="">
+                                        Как не выгорать и не истощаться в бизнесе
+                                    </div>
 
-         <div class="b-container__header b-shadow">
-             <div class="b-header">
-                 <div class="b-header__menu">
-                     <ul class="b-menu">
-                         <li class="b-menu__item b-menu__item_current">Home</li>
-                         <li class="b-menu__item"><a href="#" class="b-menu__link">Portfolio</a></li>
-                         <li class="b-menu__item"><a href="#" class="b-menu__link">Blog</a></li>
-                         <li class="b-menu__item"><a href="#" class="b-menu__link">Conact</a></li>
-                     </ul>
-                 </div>
+                                    <!--<div class="b-list__title">УРОК 2</div>-->
+                                    <div class="b-list__text">
+                                        <img src="img/check.png" class="b-list__img" alt="">
+                                        Как удвоить свою продуктивность за 4 дня
+                                    </div>
 
-                 <div class="b-header__search">
-                     <form class="b-search">
-                         <input type="search" name="query" class="b-search__textField">
-                         <input type="submit" name="xxx" class="b-search__btnSearch">
-                     </form>
-                 </div>
-             </div>
-         </div>
-
-
-        <div class="b-container__slider b-shadow">
-            <div class="b-slider">
-                <div class="b-slider__slide">
-                    <div class="b-slide">
-                        <img src="img/design/slide1.jpg" class="b-slide__img">
+                                    <!--<div class="b-list__title">УРОК 3</div>-->
+                                    <div class="b-list__text">
+                                        <img src="img/check.png" class="b-list__img" alt="">
+                                        Бизнес-мотивация и энергия для прорыва
+                                    </div>
+                                    <div class="b-list__textAbout">
+                                        9 уроков, которые выведут вашу энергию
+                                        и результаты бизнеса на качественно новый уровень!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-left__title title_recommend">Эти уроки рекомендуются:</div>
+                            <div class="b-left__text titleText">Предпринимателям, бизнесменам, сетевикам,  карьеристам</div>
+                            <img src="img/arrow_left.png" class="b-left__img" alt="">
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="b-container__info">
-            <div class="b-info">
+                    <div class="b-inform__right">
+                        <div class="b-right">
+                            <div class="b-right__registration">
+                                <div class="b-registration">
+                                    <div class="b-registration__title">ПОЛУЧИТЕ УРОКИ И УДВОЙТЕ <br> СВОЙ БИЗНЕС ПОТЕНЦИАЛ</div>
+                                    <div class="b-registration__price">Стоимость уроков:
+                                        <span class="price__throught">77$</span>
+                                        <span class="price__free"> БЕСПЛАТНО</span>
+                                    </div>
 
-                <div class="b-info__aboutSite b-shadow">
-                    <div class="b-aboutSite">
-                        <img src="img/content/aboutSite1.png" class="b-aboutSite__img">
-                            <p class="b-aboutSite__text"></p>
-                    </div>
-                </div>
+                                    <div class="b-registration__form">
+                                        <div class="ss-form">
+                                            <script type="text/javascript">var submitted=false;</script>
+                                            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='lesson1.html'}"></iframe>
 
-                <div class="b-info__aboutSite b-shadow">
-                    <div class="b-aboutSite">
-                        <img src="img/content/aboutSite2.png" class="b-aboutSite__img">
-                            <p class="b-aboutSite__text"></p>
-                    </div>
-                </div>
+                                            <form action="https://docs.google.com/forms/d/1ECH5_Gl9HdmHOuuYDWjUpfeBcJ0nBH5pjfrxD80TImU/formResponse" method="POST" id="ss-form" onsubmit="submitted=true;
 
-                <div class="b-info__aboutSite b-shadow">
-                    <div class="b-aboutSite">
-                        <img src="img/content/aboutSite3.png" class="b-aboutSite__img">
-                            <p class="b-aboutSite__text">	Lorem ipsum dolor sit amet, uer uer Duis autem vel eum iriure Duis autemvel eum iriure dolor. ipsum dolor sit amet, consectetuer Duis autem vel Lorem ipsum Lorem ipsum dolor sit amet, uer uer Duis autem vel eum iriure Duis autemvel eum iriure dolor. ipsum dolor sit amet, consectetuer </p>
-                    </div>
-                </div>
+			$responder_api.addSubscriber({
+			'email':$('#entry_1988190908').val(),
+			'first_name':$('#entry_993699804').val(),
+			'phones':$('#entry_956666292').val(),
+			'delivery_id': '1002415'
+		});
+" target="hidden_iframe">
 
-                <div class="b-info__aboutSite b-shadow">
-                    <div class="b-aboutSite">
-                        <img src="img/content/aboutSite4.png" class="b-aboutSite__img">
-                            <p class="b-aboutSite__text">	Lorem ipsum dolor sit amet, uer uer Duis autem vel eum iriure Duis autemvel eum iriure dolor. ipsum dolor sit amet, consectetuer Duis autem vel Lorem ipsum Lorem ipsum dolor sit amet, uer uer Duis autem vel eum iriure Duis autemvel eum iriure dolor. ipsum dolor sit amet, consectetuer </p>
-                    </div>
-                </div>
 
-            </div>
-        </div>
+                                                <div class="ss-form-question errorbox-good" role="listitem">
+                                                    <div class="ss-form-entry b-form__item">
+                                                        <input type="text" name="entry.993699804" value="" placeholder="Ваше имя" class="ss-q-short b-form__input b-name" id="entry_993699804" dir="auto" aria-label="имя  " aria-required="true" required="" title="">
+                                                    </div>
+                                                </div>
 
-        <div class="b-container__post b-shadow">
-            <div class="b-post">
-                <div class="b-post__tableImages">
-                    <div class="b-tableImages">
-                        <div class="b-tableImages__twoImg">
-                            <div class="b-twoImg">
-                                <img src="img/content/table_img1.png" class="b-twoImg__img">
-                                <img src="img/content/table_img2.png" class="b-twoImg__img">
+                                                <div class="ss-form-question errorbox-good" role="listitem">
+                                                    <div class="ss-form-entry b-form__item">
+                                                        <input type="email" name="entry.1988190908" value="" placeholder="Ваш email-адрес"  class="ss-q-short b-form__input b-email" id="entry_1988190908" dir="auto"  required="" >
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="ss-form-question errorbox-good" role="listitem">
+                                                    <div class="ss-form-entry b-form__item">
+                                                        <input type="text" name="entry.956666292" value="" placeholder="Контактный телефон*" class="ss-q-short b-form__input b-phone" id="entry_956666292" dir="auto"   required="" title="">
+                                                    </div>
+                                                </div>
+                                                
+<!--parsing UTM-->                                                
+                                                <div class="ss-form-question errorbox-good" role="listitem" style="display: none;">
+                                                    <div dir="auto" class="ss-item  ss-text">
+                                                        <div class="ss-form-entry1">
+                                                            <input type="text" name="entry.893050924" value="" class="ss-q-short" id="entry_893050924" dir="auto" >
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="ss-form-question errorbox-good" role="listitem">
+                                                    <div class="ss-form-entry b-form__item">
+                                                        <div class="b-form__need">* Необходимо для получения доступа к урокам</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="ss-item ss-navigate b-form__itemButton">
+                                                    <input type="submit" name="submit" value="Получить уроки" id="ss-submit" class="jfk-button jfk-button-action b-form__button">
+                                                </div>
+
+                                                <div class="ss-form-question errorbox-good" role="listitem">
+                                                    <div class="ss-form-entry b-form__item">
+                                                        <div class="b-form__need">Гарантия конфиденциальности информации</div>
+                                                    </div>
+                                                </div>
+
+
+                                            </form>
+
+                                            <script type='text/javascript' src='/static/forms/client/js/819806218-formviewer_prd__ru.js'></script>
+                                            <script type="text/javascript">H5F.setup(document.getElementById('ss-form'));
+                                            _initFormViewer(
+                                                    "[100,,[[[1988190908,[[2,102,,\x22\x22]\n]\n]\n]\n]\n]\n");</script>
+
+
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="b-tableImages__twoImg">
-                            <div class="b-twoImg">
-                                <img src="img/content/table_img3.png" class="b-twoImg__img">
-                                <img src="img/content/table_img4.png" class="b-twoImg__img">
-                            </div>
-                        </div>
                     </div>
-                </div>
 
-                <div class="b-post__aboutPost">
-                    <div class="b-aboutPost">
-                        <h3 class="b-aboutPost__title">Welcome to the site</h3>
-                            <p class="b-aboutPost__text">	Lorem ipsum dolor sit amet, uer uer Duis autem vel eum iriure Duis autemvel eum iriure dolor. ipsum dolor sit amet, consectetuer Duis autem vel Lorem ipsum Lorem ipsum dolor sit amet, uer uer Duis autem vel eum iriure Duis autemvel eum iriure dolor. ipsum dolor sit amet, consectetuer  Lorem ipsum dolor sit amet, uer uer Duis autem vel eum iriure Duis autemvel eum iriure dolor. ipsum dolor sit amet, consectetuer Duis autem vel Lorem ipsum Lorem ipsum dolor sit amet, uer uer Duis autem vel eum iriure Duis autemvel eum iriure dolor. ipsum dolor sit amet, consectetuer 	Lorem ipsum dolor sit amet, uer uer Duis autem vel eum iriure Duis autemvel eum iriure dolor. ipsum dolor sit amet, sectetuer.</p>
-                            <a href="#" class="b-aboutPost__link">More...</a>
-                    </div>
+                    <div class="clearfix"></div>
                 </div>
             </div>
         </div>
-
-        <div class="b-container__footer b-shadow">
-            <div class="footer">
-                <div class="b-footer__footerMenu">
-                    <ul class="b-footerMenu">
-                        <li class="b-footerMenu__item"><a href="#" class="b-footerMenu__link">Terms of Service </a></li>
-                        <li class="b-footerMenu__item"><a href="#" class="b-footerMenu__link">Privacy Policy   </a></li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-
     </div>
+
+    <div class="b-container__author">
+        <div class="b-author content_middle">
+            <div class="b-author__imageAuthor">
+                <div class="b-imageAuthor">
+                    <img src="img/author_img.png" class="b-imageAuthor__img" alt="">
+                </div>
+            </div>
+
+            <div class="b-author__about">
+                <div class="b-about">
+                    <div class="b-about__title">Автор и ведущий:<br>Евгений Дейнеко, тренер богатых людей.</div>
+                    <div class="b-about__text">
+                        Предприниматель с 1995 года, Психолог,
+                        Арт-терапевт, RPT терапевт, Коуч,
+                        Наставник, Инвестор, Семьянин, Миллионер
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-container__recommend">
+        <div class="b-recommend content_middle">
+            <div class="b-recommend__imageRecommend">
+                <div class="b-imageRecommend">
+                    <img src="img/bryan.png" class="b-imageRecommend__img" alt="">
+                </div>
+            </div>
+
+            <div class="b-recommend__qoute">
+                <div class="b-qoute">
+                    <div class="b-qoute__title">Евгения Дейнеко рекомендуют:</div>
+                    <div class="b-qoute__textCitata">
+                        <div class="b-qoute__text">
+                            «Евгений Дейнеко сильный и харизматичный тренер.
+                            Нам всем есть чему у него поучиться»
+                            <div class="b-qoute__textSign">Брайан Трейси</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="b-recommend__hidden">
+                <div class="b-hidden">
+                    <img src="img/bryan.png" class="b-hidden__img" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="b-container__footer">
+        <div class="b-footer content_middle">
+            <div class="b-footer__headline">Все права защищены © 2015 Тренинговый центр Евгения Дейнеко</div>
+            <div class="b-footer__footerMenu">
+                <ul class="b-footerMenu">
+                    <li class="b-footerMenu__item">
+                        <a href="http://deyneko.com.ua/privacy_policy" class="b-footerMenu__link" target="_blank">Политика конфиденциальности</a>
+                    </li>
+
+                    <li class="b-footerMenu__item">
+                        <a href="http://deyneko.com.ua/otkaz_ot_otvetstvennosti" class="b-footerMenu__link" target="_blank">Отказ от ответственности</a>
+                    </li>
+
+                    <li class="b-footerMenu__item">
+                        <a href="http://deyneko.com.ua/soglasie_s_rassylkoj" class="b-footerMenu__link" target="_blank">Согласие с рассылкой </a>
+                    </li>
+
+                    <li class="b-footerMenu__item">
+                        <a href="http://deyneko.com.ua/garanty_vozvrata" class="b-footerMenu__link" target="_blank">Гарантия возврата</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/api.js"></script>  
+<script>
+	$(function(){
+		// init responder api fnc
+		// первый параметр api_key, второй api_id
+		$responder_api = new Api_smartresponder('pOb82zsJnew9nL9zVYOLMk4vvumbHzuw', '394674');
+	});
+</script>
+
+
+<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+    (function(){ var widget_id = '26784';
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);})();
+</script>
+<!--  {/literal} END JIVOSITE CODE -->
+
+<!--  ��� ���� ������������ Google �� ��� ��������� ����� -->
+  <script type="text/javascript">
+      /* <![CDATA[ */
+      var google_conversion_id = 935470290;
+      var google_custom_params = window.google_tag_params;
+      var google_remarketing_only = true;
+      /* ]]> */
+  </script>
+  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+  </script>
+  <noscript>
+      <div style="display:inline;">
+          <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/935470290/?value=0&amp;guid=ON&amp;script=0"/>
+      </div>
+  </noscript>
+
+
+
 
 </body>
 </html>
